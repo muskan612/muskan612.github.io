@@ -134,6 +134,7 @@ function collision() {
                 score.innerHTML = "You won!"
                 clearInterval(timerId)
                 document.removeEventListener('keydown', moveUser)
+                btn.innerHTML = "Restart"
                 btn.addEventListener('click', restart)
             }
         }
@@ -153,6 +154,7 @@ function collision() {
         clearInterval(timerId)
         document.removeEventListener('keydown', moveUser)
         score.innerHTML = "You lose!"
+        btn.innerHTML = "Restart"
         btn.addEventListener('click', restart)
     }
 }
